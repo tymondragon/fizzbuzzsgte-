@@ -16,10 +16,10 @@ public class AppTest
         assertTrue( true );
     }
 
-//    @Test
-//    public void shouldReturnFizz() {
-//        assertEquals("Returns fizz", fizzBuzz.fizzOrBuzzOrLucky(3), "fizz");
-//    }
+    @Test
+    public void shouldReturnFizz() {
+        assertEquals("Returns fizz", fizzBuzz.fizzOrBuzzOrLucky(6), "fizz");
+    }
 
     @Test
     public void shouldReturnLucky() {
@@ -44,7 +44,7 @@ public class AppTest
     //stringBuilder
     @Test
     public void shouldReturnAStringOfFizzbuzz() {
-        assertEquals("Returns a concatenated string result", fizzBuzz.buildString(5), "1 2 lucky 4 buzz");
+        assertEquals("Returns a concatenated string result", fizzBuzz.buildString(13), "1 2 lucky 4 buzz fizz 7 8 fizz buzz 11 fizz lucky");
     }
 
     @Test
